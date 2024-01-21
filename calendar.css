@@ -1,0 +1,84 @@
+body {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin:0px;
+  padding:0px;
+  background-color: black;
+}
+
+
+.navigationLinksContainer {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.logo {
+  padding: 25px;
+  display:inline-block;
+}
+
+.buttons {
+  display:flex;
+  justify-content: right;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+.addTaskButton, .editTaskButton, .clearCalendar {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight:bold;
+  border:none;
+  background-color: black;
+  color:#FFE3EF;
+}
+
+.addTaskButton {
+  margin-right: 20px;
+}
+
+.addTaskButton:hover, .editTaskButton:hover, .clearCalendar:hover {
+  transition: 0.5s;
+  padding: 10px 35px;
+  cursor: pointer;
+  background-color:#FFE3EF;
+  color: black;
+  border:none;
+}
+
+
+.tableContainer {
+  width: 100%;
+  height:auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.weekContainer {
+  display:grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-content: center;
+  text-align: center;
+  margin: 10px 40px;
+}
+
+
+.eachWeekday {
+  font-size: 30px;
+  padding: 10px;
+  color:  #FFE3EF;
+
+}
+
+
+.eachTime {
+  font-weight: bold;
+  font-size: 10px;
+  padding: 10px;
+  color:  #FFE3EF;
+  padding: 10px;
+  margin-left: 100px;
+}
