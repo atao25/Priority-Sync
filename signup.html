@@ -31,20 +31,26 @@
                         <button type="submit" class="signInButton">Sign Up</button>
                     </div>
 
-                </div>
-     
-
-                    
-                 
+                </div> 
             </div>
-
 
             <div class="logoContainer">
                 <img src="images/Priority Sync.jpg" class="logo">
             </div>
 
-           
         </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const signUpButton = document.querySelector('.signInButton');
+        
+                signUpButton.addEventListener('click', function () {
+                    // Redirect to the survey form page
+                    window.location.href = 'surveyform.html';
+                });
+            });
+        </script>
+        
 
        </body>
 

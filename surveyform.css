@@ -1,5 +1,4 @@
 
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #000000;
@@ -11,13 +10,7 @@ body {
     height: 100vh;
     color: #FFE3EF;
  }
- 
- 
- .mainContainer {
-    display:grid;
-    grid-template-rows: 125px 1fr;
- }
- 
+
  
  
  
@@ -30,8 +23,6 @@ body {
  
  
  }
- 
- 
  
  
  label {
@@ -60,10 +51,9 @@ body {
     background-color: black;
  }
  
+
  
- 
- 
- .surveycontainer {
+.surveycontainer {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -72,8 +62,15 @@ body {
     max-width: 100%;
     margin: 0;
  }
- 
- 
+
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 130px; /* Adjust the width as needed */
+    height: 130px; /* Maintain aspect ratio */
+}
  
  
  

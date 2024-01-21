@@ -8,48 +8,30 @@
 
 
 <body>
-   <div class="mainContainer">
-       <div>
-           <img src="images/Priority Sync.jpg">
-       </div>
-
-
        <div class="surveycontainter">
-           <div class="headings">
-               <p>Please fill out the required information</p>
-           </div>
-           <form>
-               <label for="task name">
-                   <span>Task Name:</span>
-                   <input required id="task" type="text">
-               </label>
-               <label for="description">
-                   <textarea placeholder="description..." rows="3" cols="30" id="description"></textarea>
-               </label>
-               <label for="duration">
-                   <span>Duration:</span>
-                   <input required id="hours" type="number" placeholder="Hours" min="0"> hours
-                   <input required id="minutes" type="number" placeholder="Minutes" min="0" max="59"> minutes
-               </label>
-               <label for="deadline">
-                   <span>Deadline:</span>
-                   <select id="deadline" required>
-                       <option value="select">(select a day)</option>
-                       <option value="monday">Monday</option>
-                       <option value="tuesday">Tuesday</option>
-                       <option value="wednesday">Wednesday</option>
-                       <option value="thursday">Thursday</option>
-                       <option value="friday">Friday</option>
-                       <option value="saturday">Saturday</option>
-                       <option value="sunday">Sunday</option>
-                   </select>
-               </label>
+
+        <img src="images/Priority Sync.jpg" alt="Logo" class="logo">
+
+        <div>
+            <div class="headings">
+                <p>Please describe your tasks and preferred day and time to complete it </p>
+            </div>
+            <label for="description">
+                <textarea placeholder="description..." rows="5" cols="30" id="description"></textarea>
+            </label>
+
+        </div>
+       
+
+
                <label class="buttons">
-                   <input type="submit" value="Schedule"><button class="delete-button" onclick="deleteForm()">Delete</button>
+                   <input type="submit" value="Submit">
                </label>
            </form>
        </div>
-   </div>
+
+    
+    
  
 </body>
 </html>
