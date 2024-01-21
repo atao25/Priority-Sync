@@ -1,100 +1,93 @@
 
+
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: black;
-    font-weight: bold;
-    font-size: small;
-    
-
-}
-
-.mainContainer {
-    display:grid;
-    grid-template-rows: 1fr 1fr;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
     justify-content: center;
-}
-
-.headings {
-    padding: 20px;
-}
-
-.header {
-    font-size: 30px;
+    height: 100vh;
     color: #FFE3EF;
-}
-
-.fieldset {
-    border-style:none;
-}
-
-label {
-    display: block;
-    font-size: 18px;
-    margin: 0.5rem 0;
-    color:#FFE3EF;
-    padding: 7px;
-}
-
-label span {
-    display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.button1, .button2 {
-    margin-top: 15px;
-    width: 100px;
-    height:30px;
-    border-style:none;
-    border-radius: 13px;
-    font-weight:bold;
-    background-color: black;
-    color:#FFE3EF;
-}
-
-.button1 {
-    margin-right: 10px;
-}
-
-.button1:hover , .button2:hover {
-    cursor: pointer;
-    background-color: #FFE3EF;
-    color: black;
-}
-
-
-
-
-
-
-/*
-.headings, placeholder {
+ }
+ 
+ 
+ .mainContainer {
+    display:grid;
+    grid-template-rows: 125px 1fr;
+ }
+ 
+ 
+ 
+ 
+ .headings {
     text-align: center;
     font-weight: bold;
     background-color: black;
     color: #FFE3EF;
     font-size: large;
-
-}
-
-
-
-.buttons {
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ label {
+    display: block;
+    margin: 0.5rem 0;
+ 
+ 
+ }
+ 
+ 
+ label span {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+ 
+ 
+ .buttons {
     padding-top: 15px;
-
-}
-
-html {
+ 
+ 
+ }
+ 
+ 
+ html {
     background-color: black;
-}
-
-fieldset {
-    border: none;
-}
-
-
-
-*/
-
-
+ }
+ 
+ 
+ 
+ 
+ .surveycontainer {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+    margin: 0;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
