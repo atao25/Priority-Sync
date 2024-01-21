@@ -2,12 +2,73 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    color: #FFE3EF;
+    background-color: black;
     font-weight: bold;
     font-size: small;
+    
 
 }
 
+.mainContainer {
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.headings {
+    padding: 20px;
+}
+
+.header {
+    font-size: 30px;
+    color: #FFE3EF;
+}
+
+.fieldset {
+    border-style:none;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin: 0.5rem 0;
+    color:#FFE3EF;
+    padding: 7px;
+}
+
+label span {
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.button1, .button2 {
+    margin-top: 15px;
+    width: 100px;
+    height:30px;
+    border-style:none;
+    border-radius: 13px;
+    font-weight:bold;
+    background-color: black;
+    color:#FFE3EF;
+}
+
+.button1 {
+    margin-right: 10px;
+}
+
+.button1:hover , .button2:hover {
+    cursor: pointer;
+    background-color: #FFE3EF;
+    color: black;
+}
+
+
+
+
+
+
+/*
 .headings, placeholder {
     text-align: center;
     font-weight: bold;
@@ -18,17 +79,6 @@ body {
 }
 
 
-label {
-    display: block;
-    margin: 0.5rem 0;
-
-}
-
-label span {
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
 
 .buttons {
     padding-top: 15px;
@@ -45,6 +95,6 @@ fieldset {
 
 
 
-
+*/
 
 
