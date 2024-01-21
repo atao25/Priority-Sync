@@ -91,3 +91,16 @@ body {
 
 }
 
+.eachTime {
+  font-size: 12px;
+  font-weight:bold;
+  padding: 8px;
+  color:#FFE3EF;
+  margin-left: 10px;
+}
+
+.tableBody {
+  padding: 10px;
+
+}
+
