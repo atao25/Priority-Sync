@@ -6,32 +6,31 @@
    <title>Task Form</title>
 </head>
 
-
 <body>
        <div class="surveycontainter">
 
-        <img src="images/Priority Sync.jpg" alt="Logo" class="logo">
+            <img src="images/Priority Sync.jpg" alt="Logo" class="logo">
 
-        <div>
-            <div class="headings">
-                <p>Please describe your tasks and preferred day and time to complete it </p>
+            <div>
+                <div class="headings">
+                    <p>Please describe your tasks and preferred day and time to complete it </p>
+                </div>
+                <label for="description" class="description">
+                    <textarea placeholder="description..." rows="5" cols="30" id="description" class="textarea"></textarea>
+                </label>
             </div>
-            <label for="description">
-                <textarea placeholder="description..." rows="5" cols="30" id="description"></textarea>
-            </label>
-
-        </div>
        
 
-
-               <label class="buttons">
-                   <input type="submit" value="Submit">
-               </label>
-           </form>
+            <label class="buttons">
+                <input type="submit" value="Submit" id="submit"
+                onclick = "askChatGPT()" class="submit">
+            </label>
+           
        </div>
 
     
     
- 
+       <script src="./scratchpad/app.js"></script> 
 </body>
+
 </html>

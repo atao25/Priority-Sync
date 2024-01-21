@@ -40,13 +40,19 @@
 
         </div>
 
+         <!-- <div class="buttons">
+            <button class="addTaskButton" onclick="showSurvey()">Add Task</button>
+            <button class="editTaskButton"><a href="surveyform.html" class="buttonLink">Edit Task</a></button>
+            <button class="clearCalendar">Clear calendar</button>
+          </div>-->
+
         <script>
             document.addEventListener('DOMContentLoaded', function () {
                 const signUpButton = document.querySelector('.signInButton');
         
                 signUpButton.addEventListener('click', function () {
                     // Redirect to the survey form page
-                    window.location.href = 'surveyform.html';
+                    window.location.href = 'http://127.0.0.1:5500/calendar.html';
                 });
             });
         </script>

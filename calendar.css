@@ -5,6 +5,9 @@ body {
   background-color: black;
 }
 
+#survey-page {
+  display: none;
+}
 
 .navigationLinksContainer {
   display:grid;
@@ -83,24 +86,100 @@ body {
   margin: 10px 40px;
 }
 
+.tableContainer {
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 .eachWeekday {
-  font-size: 30px;
-  padding: 10px;
-  color:  #FFE3EF;
-
+  background-color: #3498db;
+  color: #fff;
+  padding: 15px;
 }
 
-.eachTime {
-  font-size: 12px;
-  font-weight:bold;
-  padding: 8px;
+td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+  color: black;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+.buttonLink {
+  text-decoration: none;
   color:#FFE3EF;
-  margin-left: 10px;
 }
 
-.tableBody {
-  padding: 10px;
 
+.buttonLink:hover {
+  color:black;
+}
+
+.headings {
+  text-align: center;
+  font-weight: bold;
+  background-color: black;
+  color: #FFE3EF;
+  font-size: large;
+
+
+}
+
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+
+
+}
+
+
+label span {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.buttons {
+  padding-top: 15px;
+
+
+}
+
+
+html {
+  background-color: black;
+}
+
+
+
+.surveycontainer, .survey-page {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+  margin: 0;
+}
+
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 130px; /* Adjust the width as needed */
+  height: 130px; /* Maintain aspect ratio */
 }
 

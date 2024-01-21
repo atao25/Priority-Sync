@@ -11,144 +11,65 @@
 
   <body>
 
-    <nav class="navigationLinks">
-      <div class="navigationLinksContainer">
-        <div class="logoContainer">
-          <img src="images/Priority Sync.jpg" alt="Logo" class="logo">
-        </div>
-       
-  
-        <div class="buttons">
-          <button class="addTaskButton">Add Task</button>
-          <button class="editTaskButton">Edit Task</button>
-          <button class="clearCalendar">Clear calendar</button>
-        </div>
-
-      </div>
-    </nav>
-
-    <table class="tableContainer">
-
-      <thread>
-        <tr class="weekContainer">
-          <th class="emptyWeekday"></th>
-          <th class="eachWeekday">Monday</th>
-          <th class="eachWeekday">Tuesday</th>
-          <th class="eachWeekday">Wednesday</th>
-          <th class="eachWeekday">Thursday</th>
-          <th class="eachWeekday">Friday</th>
-          <th class="eachWeekday">Saturday</th>
-          <th class="eachWeekday">Sunday</th>
-        </tr>
-      </thread>
-
-      <tbody class="tableBody">
-        <tr>
-          <td class="eachTime">12AM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">1AM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">2AM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">3AM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">4AM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">5AM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">6AM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">7AM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">8AM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">9AM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">10AM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">11AM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">12PM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">1PM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">2PM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">3PM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">4PM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">5PM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">6PM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">7PM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">8PM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">9PM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">10PM</td>
-        </tr>
-
-        <tr>
-          <td class="eachTime">11PM</td>
-        </tr>
-
-      </tbody>
-    </table>
-
+    <div id="calendar-page">
+      <nav class="navigationLinks">
+        <div class="navigationLinksContainer">
+          <div class="logoContainer">
+            <img src="images/Priority Sync.jpg" alt="Logo" class="logo">
+          </div>
+         
     
-
+          <div class="buttons">
+            <button class="addTaskButton" onclick="showSurvey()">Add Task</button>
+            <button class="editTaskButton"><a href="surveyform.html" class="buttonLink">Edit Task</a></button>
+            <button class="clearCalendar">Clear calendar</button>
+          </div>
   
+  
+  
+  
+        </div>
+      </nav>
+  
+      <table class="tableContainer">
+        <tbody id="calendarBody"></tbody>
+      </table>
+    </div>
 
+    <div id="survey-page">
+      <div class="surveycontainter" style="display:grid; grid-template-rows: 1fr 1fr;">
 
-    <script src="calendar.js"></script>
+        <div class="headings">
+          <p>Please describe your tasks and preferred day and time to complete it </p>
+        </div>
 
+        <div style="display: grid; grid-template-columns: 1fr 1fr;">
+          <div style="display:grid; grid-template-columns: 1fr 1fr;" >
+
+            <img src="images/Priority Sync.jpg" alt="Logo" class="logo">
+              
+              <label for="description", >
+                  <textarea placeholder="description..." rows="5" cols="30" id="description" style = "width:400px; height:100px; margin-top: 25px; display:flex; justify-content: center; margin-left: 30px;"></textarea>
+              </label>
+     
+          </div>
+         
+     
+     
+          <label class="buttons">
+                     <input type="submit" value="Submit" id="submit" style="padding: 20px; border-radius: 10px; background-color:#FFE3EF; color:black"
+                     onclick = "askChatGPT()">
+          </label>
+
+        </div>
+
+        
+   
+        
+           
+      </div>
+    </div>
+
+    <script src="./scratchpad/app.js"></script> 
   </body>
-
 </html>

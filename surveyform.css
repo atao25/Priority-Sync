@@ -11,6 +11,8 @@ body {
     color: #FFE3EF;
  }
 
+
+
  
  
  
@@ -54,6 +56,10 @@ body {
 
  
 .surveycontainer {
+   display:grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   justify-content: center;
+   align-items: center;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -61,6 +67,39 @@ body {
     width: 400px;
     max-width: 100%;
     margin: 0;
+ }
+
+ .description {
+   width: 100px;
+   height:100px;
+ }
+
+ .submit {
+   display:flex;
+   align-items:center;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: black;
+   border-style:none;
+   color: #FFE3EF;
+   margin-left: 270px;
+
+ }
+
+ .submit:hover {
+   background-color: #FFE3EF;
+   cursor: pointer;
+   color: black;
+
+ }
+
+ .textarea {
+   width: 500px;
+   height: 100px;
+   justify-content: center;
+   align-items: center;
+   margin-left: 50px;
+
  }
 
 
