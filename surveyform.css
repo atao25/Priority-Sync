@@ -1,0 +1,46 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #FFE3EF;
+    font-weight: bold;
+    font-size: small;
+
+}
+
+.headings, placeholder {
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: #FFE3EF;
+    font-size: large;
+
+}
+
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+
+}
+
+label span {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.buttons {
+    padding-top: 15px;
+
+}
+
+html {
+    background-color: black;
+}
+
+
+
+
+
+
